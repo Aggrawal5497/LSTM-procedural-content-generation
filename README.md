@@ -1,3 +1,9 @@
+# Tensorflow generator-discriminator without TRAIN OP
+
+- <b>Generator</b> : starts sampling process by a special go token, ends the sampling process after flat image pixels are generated.
+- <b>Discriminator</b> : Takes the generated samples from generator in shape `[batch_size, image_flat_dim]`, simple single layer neural netword using sigmoid activation.
+
+
 # LSTM-procedural-content-generation
 
 ## Try 1 : Without attention
@@ -11,8 +17,3 @@
 - Output : grids from generator = y_
 
 - Labels : grids from training example = y
-
-# Tensorflow generator-discriminator without TRAIN OP.ipynb
-
-- Generator : starts sampling process by a special go token, ends the sampling process after flat image pixels are generated.
-- Discriminator : Takes the generated samples from generator in shape `[batch_size, image_flat_dim]`, simple single layer neural netword using sigmoid activation.
