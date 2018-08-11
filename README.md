@@ -1,3 +1,7 @@
+# LSTM gan-Train op created
+- <b>Generator</b> : Sampling through go token then sampled sequence in convoluted to create single channel image, (Convolution expected to work as argmax layer in typical sequence generators)
+- <b>Discriminator</b> : Takes the generated samples from generator in shape `[batch_size, image_flat_dim]`, simple single layer neural netword using sigmoid activation.
+
 # Tensorflow generator-discriminator without TRAIN OP
 
 - <b>Generator</b> : starts sampling process by a special go token, ends the sampling process after flat image pixels are generated.
